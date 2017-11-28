@@ -82,5 +82,4 @@ public class AtmRegister extends JFrame {
 		JLabel lblAccountId = new JLabel("Your assigned account ID is: ");
 		contentPane.add(lblAccountId);
 	}
-
 }

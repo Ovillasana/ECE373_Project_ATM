@@ -17,19 +17,6 @@ public class AtmLogin extends JFrame {
 	private static final long serialVersionUID = -5535484166491623591L;
 	private JPanel contentPane;
 	private JPanel loginPanel;
-	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					AtmLogin frame = new AtmLogin();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
 	public AtmLogin() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
