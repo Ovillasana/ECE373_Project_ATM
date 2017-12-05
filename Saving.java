@@ -1,17 +1,18 @@
 package org.ATM.software;
 
+import java.text.DecimalFormat;
 import java.util.*;
 
-public class Checking extends Account{
+public class Saving extends Account{
 	private double maxDeposit;
 	private double minWithdraw;
 	private double maxDailyWithdraw;
 	private double withdrawnToday;
 	
-	public Checking() {
-		maxDeposit = 1000; //all arbitrary values
- 		minWithdraw = 5;
-		maxDailyWithdraw = 300; 
+	public Saving() {
+		maxDeposit = 10000; //all arbitrary values
+ 		minWithdraw = 50;
+		maxDailyWithdraw = 1000; 
 		withdrawnToday = 0;
 	}
 	
@@ -45,7 +46,7 @@ public class Checking extends Account{
 	}
 	
 	public void setWithdrawnToday(double amount) {
-		this.withdrawnToday = amount;
+		this.withdrawnToday += amount;
 	}
 	
 	//methods
